@@ -4,7 +4,7 @@ import sys
 import asyncio
 from dotenv import load_dotenv
 from discord.ext import tasks
-from Configure import launch_config
+#from Configure import launch_config
 from connect_and_launch import get_status, get_number_of_players
 from connect_and_launch import connect_account, quitBrowser, get_server_info
 from connect_and_launch import start_server, stop_server
