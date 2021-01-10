@@ -82,7 +82,6 @@ def connect_account():
         have to do it every time we want to start or stop the server."""
     print('##connecting account...')
     driver.get(URL)
-    print('##driver test:' + driver)
     print('##xpath test:' + driver.title)
     # login to aternos
     element = driver.find_element_by_xpath('//*[@id="user"]')
