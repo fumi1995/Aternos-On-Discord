@@ -1,6 +1,8 @@
 import asyncio
 import time
 import os
+import undetected_chromedriver as uc
+uc.install()
 from selenium import webdriver
 from selenium.common.exceptions import ElementNotInteractableException
 from dotenv import load_dotenv
@@ -15,14 +17,14 @@ URL = "https://aternos.org/go/"
 adblock = False  # for those with network wide ad blockers
 headless = True  # if you want a headless window
 
-options = webdriver.ChromeOptions()
+options = uc.ChromeOptions()
 if headless:
     options.add_argument('--headless')
 options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                      "AppleWebKit/537.36 (KHTML, like Gecko) "
                      "Chrome/87.0.4280.88 Safari/537.36")
 
-driver = webdriver.Chrome(options=options, executable_path=binary_path)
+driver = uc.Chrome(options=options, executable_path=binary_path)
 
 
 async def start_server():
