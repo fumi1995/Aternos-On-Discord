@@ -1,4 +1,4 @@
-print('execute discordbot.py')
+print('##execute discordbot.py')
 
 import discord
 import os
@@ -10,6 +10,8 @@ from discord.ext import tasks
 from connect_and_launch import get_status, get_number_of_players
 from connect_and_launch import connect_account, quitBrowser, get_server_info
 from connect_and_launch import start_server, stop_server
+
+print('##all imported')
 
 # 
 #if not os.path.exists(os.path.relpath(".env")):
@@ -101,6 +103,7 @@ async def on_message(message):
                 await message.channel.send("The server is already Offline.")
 
         elif message.content.lower() == '--help':
+            print('##--help')
             embed = discord.Embed(title="Help")
             embed.add_field(name="--launch server",
                             value="Launches the server",
