@@ -80,6 +80,7 @@ def get_server_info():
 def connect_account():
     """ Connects to the accounts through a headless chrome tab so we don't
         have to do it every time we want to start or stop the server."""
+    print('##connecting account...')
     driver.get(URL)
     print(driver)
     print(driver.find_element_by_xpath('//title'))
