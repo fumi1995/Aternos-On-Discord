@@ -15,7 +15,7 @@ from connect_and_launch import start_server, stop_server
 #    sys.exit()
 
 load_dotenv()
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 
 client = discord.Client()
 
