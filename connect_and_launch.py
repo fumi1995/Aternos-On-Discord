@@ -48,7 +48,7 @@ async def start_server():
             element.click()
         except ElementNotInteractableException:
             pass
-    print("Server Started")
+    print("##Server Started")
 
 
 def get_status():
@@ -106,14 +106,14 @@ def connect_account():
         element.click()
         time.sleep(3)
 
-    print("Headless Tab Ready")
+    print("##Headless Tab Ready")
 
 
 async def stop_server():
     """ Stops server from aternos panel."""
     element = driver.find_element_by_xpath("//*[@id=\"stop\"]")
     element.click()
-    print("Server Stopped")
+    print("##Server Stopped")
 
 
 def quitBrowser():
