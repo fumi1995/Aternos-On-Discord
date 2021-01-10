@@ -1,0 +1,6 @@
+{
+  "name": "Aternos-On-Discord",
+  "description": "discordからaternosにアクセスする",
+  "repository": "https://github.com/fumi1995/Aternos-On-Discord.git",
+  "keywords": ["python", "discord", "bot"]
+}
