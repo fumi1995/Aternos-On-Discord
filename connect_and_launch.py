@@ -3,8 +3,8 @@ import time
 import os
 import undetected_chromedriver as uc
 uc.install()
-from selenium import webdriver
-from selenium.common.exceptions import ElementNotInteractableException
+#from selenium import webdriver
+#from selenium.common.exceptions import ElementNotInteractableException
 from dotenv import load_dotenv
 from chromedriver_py import binary_path
 
@@ -48,7 +48,7 @@ async def start_server():
         try:
             element = driver.find_element_by_xpath('//*[@id="confirm"]')
             element.click()
-        except ElementNotInteractableException:
+        except:# ElementNotInteractableException:
             pass
     print("##Server Started")
 
