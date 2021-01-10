@@ -1,3 +1,5 @@
+print('execute discordbot.py')
+
 import discord
 import os
 import sys
@@ -9,7 +11,6 @@ from connect_and_launch import get_status, get_number_of_players
 from connect_and_launch import connect_account, quitBrowser, get_server_info
 from connect_and_launch import start_server, stop_server
 
-print('execute discordbot.py')
 # 
 #if not os.path.exists(os.path.relpath(".env")):
 #    launch_config()
