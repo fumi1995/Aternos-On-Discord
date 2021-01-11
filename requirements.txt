@@ -24,5 +24,6 @@ urllib3==1.25.8
 websockets==8.1
 yarl==1.4.2
 requests_toolbelt>= 0.9.1
+lxml
 undetected-chromedriver
 cloudscraper
